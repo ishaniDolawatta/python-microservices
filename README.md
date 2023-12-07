@@ -1,6 +1,8 @@
 # python-microservices
 Python-microservices
 
+[![Python application test with Github Actions](https://github.com/ishaniDolawatta/python-microservices/actions/workflows/devops.yml/badge.svg)](https://github.com/ishaniDolawatta/python-microservices/actions/workflows/devops.yml)
+
 # Scaffold
 1. Create virtual enviornmente - `python3 -m venv ~/.venv`
 2. Add venv to `~/.bashrc`
