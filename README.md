@@ -9,5 +9,6 @@ Python-microservices
 3. Create empty files `requirements.txt`, `Dockerfile`, `Makefile`, `__init__.py`, `logic.py`, `main.py`
 4. populate `Makefile`
 5. Setup continous integration, format code, check lint errors. 
+6. Create CLI using python fire `cli-fire.py -- --help`
 
 
