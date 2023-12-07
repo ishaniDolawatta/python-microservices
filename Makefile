@@ -6,7 +6,9 @@ install:
 format: 
 	#format
 	black *.py lib/*.py
-lint: #flake8 pylint
+lint: 
+	#pylint
+	pylint --disable=R,C *.py lib/*.py
 test: #test
 deploy: #deploy
 all: install lint test deploy
