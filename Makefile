@@ -3,6 +3,9 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
+post-install:
+	python3 -m textblob.download_corpora
+
 format: 
 	#format
 	black *.py mylib/*.py
