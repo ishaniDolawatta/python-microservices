@@ -9,6 +9,8 @@ format:
 lint: 
 	#pylint
 	pylint --disable=R,C *.py mylib/*.py
-test: #test
+test: #test 
+	python -m pytest -vv --cov=mylib --cov=main test_*.py
+build: #build container
 deploy: #deploy
 all: install lint test deploy
