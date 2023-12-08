@@ -24,4 +24,4 @@ deploy:
 	docker build -t wiki .
 	docker tag wiki:latest 748909003339.dkr.ecr.us-east-1.amazonaws.com/wiki:latest
 	docker push 748909003339.dkr.ecr.us-east-1.amazonaws.com/wiki:latest
-all: install lint test deploy
+all: install post-install lint test deploy
