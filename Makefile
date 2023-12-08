@@ -2,10 +2,8 @@ install:
 	#install command
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
-
 post-install:
-	python3 -m textblob.download_corpora
-
+	python -m textblob.download_corpora
 format: 
 	#format
 	black *.py mylib/*.py
@@ -14,6 +12,8 @@ lint:
 	pylint --disable=R,C *.py mylib/*.py
 test: #test 
 	python -m pytest -vv --cov=mylib --cov=main test_*.py
-build: #build container
+build: 
+	#build container
+	docker build -t deploy-fastapi .
 deploy: #deploy
 all: install lint test deploy
