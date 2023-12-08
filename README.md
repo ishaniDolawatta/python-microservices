@@ -10,5 +10,8 @@ Python-microservices
 4. populate `Makefile`
 5. Setup continous integration, format code, check lint errors. 
 6. Create CLI using python fire `cli-fire.py -- --help`
+7. Create FastApis with uvicorn `cli-fire.py -- --help`
+8. Create tests
+9. Build docker image
 
 
